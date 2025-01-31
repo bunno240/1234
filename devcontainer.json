@@ -1,0 +1,9 @@
+
+{
+  "name": "Dns base codespace",
+  "image": "mcr.microsoft.com/devcontainers/python:3.8",
+  "containerEnv": {
+    "SERVER_DNS": "Dns_host_name_here"
+  },
+  "postCreateCommand": "echo 'nameserver dns_ip_here' | sudo tee /etc/resolv.conf > /dev/null"
+}
